@@ -6,8 +6,8 @@
 * @Date:    2020-09-30 13:06:54
 * @Summary: Definition of class Point
 *
-* @Last Modified by:   d0m
-* @Last Modified time: 2020-09-30 13:45:42
+* @Last Modified by:   d0m G
+* @Last Modified time: 2020-10-01 21:43:43
 */
 
 #include <string>
@@ -54,5 +54,10 @@ namespace geometry {
             str = "(" + std::to_string(_x) + "," + std::to_string(_y) + ")";
         }
         return str;
+     }
+
+     void Point::reset() {
+        updateX(0);
+        updateY(0);
      }
 } // geometry

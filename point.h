@@ -6,8 +6,8 @@
 * @Date:    2020-09-30 13:06:54
 * @Summary: Declaration of class Point
 *
-* @Last Modified by:   d0m
-* @Last Modified time: 2020-09-30 13:38:08
+* @Last Modified by:   d0m G
+* @Last Modified time: 2020-10-01 21:43:07
 */
 
 #ifndef POINT_H
@@ -31,6 +31,7 @@ namespace geometry {
         void move(double dx, double dy);
         double distance(Point p);
         std::string toString(std::string description="") const;
+        void reset();
 
     private:
         double _x;
