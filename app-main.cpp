@@ -7,7 +7,7 @@
 * @Summary: test Point class
 *
 * @Last Modified by:   d0m G
-* @Last Modified time: 2020-10-01 21:35:35
+* @Last Modified time: 2020-10-01 21:48:01
 */
 
 #include <iostream>
@@ -33,7 +33,10 @@ int main(int argc, char const *argv[])
 
     std::cout << "distance = " << c.distance(b) << std::endl;
 
-    c.update(8, 0);
+    c.update(8, 5);
+    std::cout << c.toString("c") << std::endl;
+
+    c.reset();
     std::cout << c.toString("c") << std::endl;
 
     return 0;
