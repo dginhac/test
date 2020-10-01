@@ -7,7 +7,7 @@
 * @Summary: Declaration of class Point
 *
 * @Last Modified by:   d0m G
-* @Last Modified time: 2020-10-01 21:43:07
+* @Last Modified time: 2020-10-01 22:28:38
 */
 
 #ifndef POINT_H
@@ -32,6 +32,7 @@ namespace geometry {
         double distance(Point p);
         std::string toString(std::string description="") const;
         void reset();
+        Point symmetric();
 
     private:
         double _x;

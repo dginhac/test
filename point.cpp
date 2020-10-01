@@ -7,7 +7,7 @@
 * @Summary: Definition of class Point
 *
 * @Last Modified by:   d0m G
-* @Last Modified time: 2020-10-01 21:43:43
+* @Last Modified time: 2020-10-01 22:29:25
 */
 
 #include <string>
@@ -40,8 +40,8 @@ namespace geometry {
     }
 
     double Point::distance(Point p) {
-        double dx = _x - p.x();
-        double dy = _y - p.y();
+        double dx = x() - p.x();
+        double dy = y() - p.y();
         return sqrt(dx*dx + dy*dy);
     }
 
@@ -59,5 +59,9 @@ namespace geometry {
      void Point::reset() {
         updateX(0);
         updateY(0);
+     }
+
+     Point Point::symmetric() {
+        return Point(-x(), -y());
      }
 } // geometry

@@ -7,7 +7,7 @@
 * @Summary: test Point class
 *
 * @Last Modified by:   d0m G
-* @Last Modified time: 2020-10-01 21:48:01
+* @Last Modified time: 2020-10-01 22:30:38
 */
 
 #include <iostream>
@@ -38,6 +38,10 @@ int main(int argc, char const *argv[])
 
     c.reset();
     std::cout << c.toString("c") << std::endl;
+
+    geometry::Point sym_b = b.symmetric();
+    std::cout << b.toString("b") << std::endl;
+    std::cout << sym_b.toString("sym_b") << std::endl;
 
     return 0;
 }
