@@ -6,8 +6,8 @@
 * @Date:    2020-09-30 13:25:42
 * @Summary: test Point class
 *
-* @Last Modified by:   d0m
-* @Last Modified time: 2020-09-30 13:44:30
+* @Last Modified by:   d0m G
+* @Last Modified time: 2020-10-01 21:35:35
 */
 
 #include <iostream>
@@ -32,6 +32,9 @@ int main(int argc, char const *argv[])
     std::cout << c.toString("c") << std::endl;
 
     std::cout << "distance = " << c.distance(b) << std::endl;
+
+    c.update(8, 0);
+    std::cout << c.toString("c") << std::endl;
 
     return 0;
 }
